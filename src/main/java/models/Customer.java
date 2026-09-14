@@ -2,7 +2,7 @@ package models;
 
 public class Customer {
 	private int id;
-	private User user;
+	private int userId;
 	private String name;
 	private String email;
 	private String address;
@@ -11,9 +11,18 @@ public class Customer {
 	public Customer() {
 	}
 
-	public Customer(int id, User user, String name, String email, String address, String phone) {
+	public Customer(int id, int userId, String name, String email, String address, String phone) {
 		this.id = id;
-		this.user = user;
+		this.userId = userId;
+		this.name = name;
+		this.email = email;
+		this.address = address;
+		this.phone = phone;
+	}
+
+	public Customer(int userId, String name, String email, String address, String phone) {
+		super();
+		this.userId = userId;
 		this.name = name;
 		this.email = email;
 		this.address = address;
@@ -28,12 +37,12 @@ public class Customer {
 		this.id = id;
 	}
 
-	public User getUser() {
-		return user;
+	public int getUser() {
+		return userId;
 	}
 
-	public void setUser(User user) {
-		this.user = user;
+	public void setUser(int userId) {
+		this.userId = userId;
 	}
 
 	public String getName() {
