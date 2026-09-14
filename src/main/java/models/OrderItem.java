@@ -4,7 +4,7 @@ public class OrderItem {
 
 	private int id;
 	private Product product;
-	private float price;
+	private double price;
 	private int quantity;
 	
 	public OrderItem() {
@@ -35,7 +35,7 @@ public class OrderItem {
 		this.product = product;
 	}
 
-	public float getPrice() {
+	public double getPrice() {
 		return price;
 	}
 

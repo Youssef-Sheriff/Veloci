@@ -1,29 +1,30 @@
 package models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Product {
 
 	private int id;
 	private String name;
-	private float price;
+	private double price;
 	private int stock;
 	private String description;
 	private Category category;
-    private List<ProductImage> images;
+	private List<ProductImage> images;
 
 	public Product() {
 
 	}
 
 	public Product(int id, String name, float price, int stock, String description, Category category) {
-		super();
 		this.id = id;
 		this.name = name;
 		this.price = price;
 		this.stock = stock;
 		this.description = description;
 		this.category = category;
+		this.images = new ArrayList<ProductImage>();
 	}
 
 	public int getId() {
@@ -42,7 +43,7 @@ public class Product {
 		this.name = name;
 	}
 
-	public float getPrice() {
+	public double getPrice() {
 		return price;
 	}
 
@@ -72,6 +73,14 @@ public class Product {
 
 	public void setCategory(Category category) {
 		this.category = category;
+	}
+
+	public List<ProductImage> getImages() {
+		return images;
+	}
+
+	public void setImages(List<ProductImage> images) {
+		this.images = images;
 	}
 
 }

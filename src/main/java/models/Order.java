@@ -1,5 +1,6 @@
 package models;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 
@@ -10,7 +11,7 @@ public class Order {
 	private int id;
 	private Customer customer;
 	private OrderStatus status;
-	private Date orderDate;
+	private LocalDateTime orderDate;
 	private double totalPrice;
 	private List<OrderItem> orderItems;
 
@@ -18,7 +19,7 @@ public class Order {
 
 	}
 
-	public Order(int id, Customer customer, List<OrderItem> orderItems, OrderStatus status, Date orderDate, double totalPrice) {
+	public Order(int id, Customer customer, List<OrderItem> orderItems, OrderStatus status, LocalDateTime orderDate, double totalPrice) {
 		super();
 		this.id = id;
 		this.customer = customer;
@@ -44,11 +45,11 @@ public class Order {
 		this.status = status;
 	}
 
-	public Date getOrderDate() {
+	public LocalDateTime getOrderDate() {
 		return orderDate;
 	}
 
-	public void setOrderDate(Date orderDate) {
+	public void setOrderDate(LocalDateTime orderDate) {
 		this.orderDate = orderDate;
 	}
 

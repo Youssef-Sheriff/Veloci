@@ -1,5 +1,8 @@
 package listeners;
 
+import java.io.InputStream;
+import java.util.Properties;
+
 import database.DBConnection;
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletContextEvent;
@@ -13,7 +16,7 @@ public class DBListener implements ServletContextListener {
 	public DBListener() {
 
 	}
-
+// local db
 	public void contextInitialized(ServletContextEvent sce) {
 
 		ServletContext context = sce.getServletContext();
@@ -23,13 +26,11 @@ public class DBListener implements ServletContextListener {
 		String pass = context.getInitParameter("DBPass");
 		 
 
-		DBConnection.initalize(url, user, pass);
+		DBConnection.initialize(url, user, pass);
 		
-//		System.out.println("url: "+url);
-//		System.out.println("user: "+user);
-//		System.out.println("pass: "+pass);
 	}
 
+	
 	public void contextDestroyed(ServletContextEvent sce) {
 		// TODO Auto-generated method stub
 	}

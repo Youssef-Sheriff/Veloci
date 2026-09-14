@@ -1,6 +1,6 @@
 package models;
 
-public class Customer extends User {
+public class Customer {
 	private int id;
 	private User user;
 	private String name;
@@ -12,7 +12,6 @@ public class Customer extends User {
 	}
 
 	public Customer(int id, User user, String name, String email, String address, String phone) {
-		super();
 		this.id = id;
 		this.user = user;
 		this.name = name;

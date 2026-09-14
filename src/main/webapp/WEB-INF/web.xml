@@ -15,7 +15,8 @@
 		<welcome-file>default.xhtml</welcome-file>
 	</welcome-file-list>
 
-	<!-- Servlet Context -->
+
+ <!-- Servlet Context 
 	<context-param>
 		<param-name>DBUrl</param-name>
 		<param-value>jdbc:mysql://localhost:3306/ecommerce_db?useSSL=false&amp;serverTimezone=UTC</param-value>
@@ -29,14 +30,15 @@
 	<context-param>
 		<param-name>DBPass</param-name>
 		<param-value></param-value>
-	</context-param>
+	</context-param> -->
+	
 	
 
 	<!-- Database Listener -->
 	<listener>
 		<listener-class>listeners.DBListener</listener-class>
 	</listener>
-
+	
 
 
 

@@ -18,7 +18,7 @@ public final class DBConnection {
 		}
 	}
 
-	public static void initalize(String url, String user, String password) {
+	public static void initialize(String url, String user, String password) {
 		DBConnection.url = url;
 		DBConnection.user = user;
 		DBConnection.pass = password;
