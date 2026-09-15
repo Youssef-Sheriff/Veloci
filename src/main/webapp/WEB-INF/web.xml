@@ -21,7 +21,7 @@
 		<param-name>DBUrl</param-name>
 		<param-value>jdbc:mysql://localhost:3306/ecommerce_db?useSSL=false&amp;serverTimezone=UTC</param-value>
 	</context-param>
-
+	
 	<context-param>
 		<param-name>DBUser</param-name>
 		<param-value>root</param-value>
